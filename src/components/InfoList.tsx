@@ -17,7 +17,13 @@ const InfoList = ({ icon, title, detail, link }: Props) => {
         <div className="font-semibold">{title}</div>
         {link ? (
           <a href={link}>
-            <div className="text-white font-thin">{detail}</div>
+            <div
+              className={`text-white font-thin ${
+                link ? "hover:underline active:text-opacity-50" : ""
+              }`}
+            >
+              {detail}
+            </div>
           </a>
         ) : (
           <div className="text-white font-thin">{detail}</div>

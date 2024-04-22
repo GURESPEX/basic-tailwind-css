@@ -22,9 +22,12 @@ const CardOne = () => {
           </div>
         </div>
         <div className="row justify-center">
-          <button className="px-4 py-1 text-black bg-lime-500 rounded-full">
-            yourwebsite.com
-          </button>
+          <a
+            href="mailto:natthanan.th@kkumail.com"
+            className="px-4 py-1 text-black bg-lime-500 rounded-full hover:opacity-75 active:opacity-50 transition"
+          >
+            natthanan.th@kkumail.com
+          </a>
         </div>
       </div>
     </Card>

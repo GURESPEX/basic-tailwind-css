@@ -1,9 +1,9 @@
 import catImage from "@assets/cute-cat.png";
-const CardImage = () => {
+const CardImage = ({ className }: { className?: string }) => {
   return (
     <div
       style={{ filter: "drop-shadow(0 0 64px rgba(132, 204, 22, 0.5))" }}
-      className="relative col justify-center items-center p-12 flex-1 overflow-hidden"
+      className={`${className} relative col justify-center items-center p-12 flex-1 overflow-hidden`}
     >
       <div className="absolute row justify-center items-center w-full h-full">
         <div className="w-full lg:w-[96px] h-[96px] lg:h-full bg-lime-500" />

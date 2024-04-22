@@ -19,7 +19,7 @@ const InfoList = ({ icon, title, detail, link }: Props) => {
           <a href={link}>
             <div
               className={`text-white font-thin ${
-                link ? "hover:underline active:text-opacity-50" : ""
+                link ? "hover:underline active:text-opacity-50 transition" : ""
               }`}
             >
               {detail}
